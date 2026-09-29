@@ -1,0 +1,92 @@
+---
+title: "My somewhat longer preso"
+author:
+  - name: Klaas Dieleman
+    orcid: 0009-0007-6414-1389
+    email: k.p.dieleman@students.uu.nl
+    affiliations:
+     - name: Methodology & Statistics @ Utrecht University
+date: 29 Sep 2026
+date-format: "D MMM YYYY"
+bibliography: refs.bib
+---
+# Main section
+I feel we should have a level 1 heading, since we cannot start with the l2 headings, that would break the semantic heading hierarchy. So here it is.
+
+## 1. Introduction
+This will be my beautiful presentation in [Quarto](https://quarto.org/docs/guide/). You can already see who I am from the metadata, so let's not repeat that here.
+
+This is UU's logo, it's in SVG (which is a markup language as well, it's based on XML - eXtensible Markup Language) and therefore infinitely sharp, because it's vector-based instead of pixel-based.
+
+![](https://www.uu.nl/themes/custom/corp/src/images/uu-logo-en.svg){fig-align="center" width="20%"}
+
+## 2. Figures
+### Centered still figure
+<center>
+![Me at a gig, 10 years ago 😱](./13458695_1132894720064370_7960545772069844092_o.jpg){width="80%"}
+</center>
+
+### Movie
+We seem to have some moving picture of that same gig as well:  
+{{< video https://www.youtube.com/embed/MZMYuJjcRgE title="Another 45 Miles" >}}
+
+## 3. Tables
+Here's an interactive table, generated from a code chunk that will be cached, is labeled, but not displayed:
+```{r}
+#| echo: false
+#| cache: true
+#| label: my_table
+
+library(DT)
+
+iris |> datatable(options = list(pageLength = 25))
+
+```
+
+## 4. Columns
+Here's some text from @lotr.
+
+### Text fragment
+
+::: columns
+::: {.column width="45%"}
+"So you're going to go through with it, then," Gandalf the Wizard said slowly.
+
+"I am," Bilbo replied. "I've been planning this for a long time. It'll give the Hobbits of the Shire something to talk about for the next nine days - or ninety-nine, more likely. Anyway, at least I'll have my little joke."
+
+"Who will laugh, I wonder?" Gandalf mused aloud, scratching his beard idly.
+
+For weeks carts and caravans were coming from all over Middle-earth to bring provisions for the Grand Old Party, as Bilbo referred to it.
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="45%"}
+Wagons of food from the Dwarvish mines at Erebor, shiny rocks from the Sea-elves and fancy seductive packages from southern Mirkwood arrived daily, making the neighborhood generally more crowded and cluttering up avenues. Even those who hadn't said anything bad about Bilbo before were starting to show their annoyance. "Mr. Bilbo Baggins is starting to get a mite annoying," old Gaffer Gamgee grumbled, standing outside the pub. "Queer goings-on, and no mistake. Why just yesterday a bunch o' pesky Wood-elves dragged their cart right acrost my yard and ruined my taters!"
+:::
+:::
+
+## 5. Equations
+
+I found this beautiful equation in Dave's famous Reader [-@funda_reader]:
+
+$$
+\begin{aligned}
+f(x_0) + f′(x_0)(x − x_0) &= 0 \\
+xf′(x_0) &= f′(x_0)x_0 − f(x_0) \\
+x &= x_0 − \frac{f(x_0)}{f′(x_0)}
+\end{aligned}
+$$
+
+## 6. R code
+This chunk will be displayed, but not executed:
+```{r}
+#| eval: false
+
+# Some comment
+someVar <- 1:10
+```
+
+## 7. References
+::: {#refs}

@@ -1,0 +1,26 @@
+---
+title: "My funky mini preso"
+author:
+  - name: Klaas Dieleman
+    orcid: 0009-0007-6414-1389
+    email: k.p.dieleman@students.uu.nl
+    affiliations:
+     - name: Methodology & Statistics @ Utrecht University
+date: 29 Sep 2026
+date-format: "D MMM YYYY"
+---
+
+## Cover slide
+My name is **Klaas Dieleman**  
+My ORCID is **0009-0007-6414-1389**
+
+![](https://www.uu.nl/themes/custom/corp/src/images/uu-logo-en.svg){width="20%"}
+
+## Equation
+My favorite equation is $E=MC^2$, but it really isn't because I have no clue
+what it's really about.
+So let's bring on Bayes' theorem again:
+$$P(A|B)=\frac{P(A)*P(B|A)}{P(B)}$$
+
+## Random fact about me
+I've been in a rock band and in a classical choir during high school.
