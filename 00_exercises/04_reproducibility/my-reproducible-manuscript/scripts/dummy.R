@@ -16,3 +16,5 @@ ggplot(penguins,
                 color = "Penguin species", shape = "Penguin species"
         ) +
         theme_minimal()
+
+?max
