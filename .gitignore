@@ -40,10 +40,14 @@ vignettes/*.pdf
 .Renviron
 
 # pkgdown site
-docs/
+# docs/
 
 # translation temp files
 po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Temp ignore for week 4's quarto output - fix later
+00_exercises/04_reproducibility/my-reproducible-manuscript/docs/my-reproducible-manuscript_files
+00_exercises/04_reproducibility/my-reproducible-manuscript/docs/my-reproducible-manuscript.html
